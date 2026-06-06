@@ -11,6 +11,7 @@ class Teacher(models.Model):
 
 class Class(models.Model):
     name = models.CharField(max_length=50)
+    year = models.IntegerField()
 
 class Student(models.Model):
     firstname = models.CharField(max_length=150)
